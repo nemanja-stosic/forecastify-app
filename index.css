@@ -1,0 +1,167 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1d2023;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #292c31;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #b3dec1;
+}
+
+.space-div {
+    width: 200px;
+    height: 100px;
+}
+
+.draggable {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #292c31;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #b3dec1;
+
+    /* Add draggable styles */
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+}
+
+/* Styles for the heading */
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Styles for the input and button */
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background-color: #1d2023;
+    color: #b3dec1;
+}
+
+button {
+    flex-shrink: 0;
+    padding: 12px 24px;
+    background-color: #6743ef;
+    color: #b3dec1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #4619eb;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Styles for the weather information */
+#weather-info {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.show-image {
+    width: 400px;
+    height: 400px;
+}
+
+.show-image img {
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#flag-image {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type="text"] {
+        width: 100%;
+    }
+}
